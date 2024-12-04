@@ -10,6 +10,7 @@
     <style>
         /* Color Palette */
         :root {
+            /* TODO: Change / refactor names*/
             --dark-red: #353535;
             --deep-red: #403d39;
             --bright-red: #3c6e71;
@@ -78,8 +79,8 @@
             transition: 0.5s;
         }
         .navbar-nav:hover {
-        background-color: rgba(60, 110, 113, 0.5); /* 50% transparent background */
-        transition: background-color 0.5s ease; /* Smooth transition for background color */
+        background-color: rgba(60, 110, 113, 0.5); /* 50% transparent background [Not working >:( ]*/
+        transition: background-color 0.5s ease; 
 }
     </style>
 </head>
@@ -94,6 +95,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
+                        <!-- Opts in nav bar -->
                         <a class="nav-link" href="#services">Services</a>
                     </li>
                     <li class="nav-item">
@@ -114,7 +116,7 @@
         <button class="btn btn-custom mt-3"><b>Explore Now</b></button>
     </div>
 
-    <!-- Services Section -->
+    <!-- Services Section (make into clickable) -->
     <div class="container services" id="services">
         <h2 class="text-center mb-4">Our Services</h2>
         <div class="row">
@@ -139,7 +141,7 @@
         </div>
     </div>
 
-    <!-- Footer -->
+    <!-- The Footer (or another name) -->
     <footer class="footer" id="contact">
         <p>&copy; 2024 Palowski Skateworks. All rights reserved.</p>
         <p>Email: <a href="mailto:info@palowskiskateworks.com" class="text-light-yellow">info@palowskiskateworks.com</a></p>
