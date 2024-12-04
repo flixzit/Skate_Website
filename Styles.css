@@ -1,0 +1,97 @@
+/* Color Palette */
+:root {
+    --dark-red: #353535;
+    --deep-red: #403d39;
+    --bright-red: #3c6e71;
+    --fiery-orange: #284b63;
+    --bright-yellow: #184e77;
+    --button-blue: #082a44;
+    --light-yellow: #efe6dd;
+}
+/* Resetting margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Ensuring the body takes up the full viewport height */
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Body styling */
+body {
+    background-color: var(--dark-red);
+    color: var(--light-yellow);
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navbar */
+.navbar {
+    background-color: var(--bright-red);
+}
+
+.navbar-brand, .nav-link {
+    color: var(--light-yellow) !important;
+}
+
+.navbar-nav:hover {
+    background-color: rgba(60, 110, 113, 0.5); /* 50% transparent background */
+    transition: background-color 0.5s ease; /* Smooth transition for background color */
+}
+
+/* Hero Section */
+.hero {
+    background-color: var(--deep-red);
+    padding: 60px;
+    text-align: center;
+    color: var(--light-yellow);
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+/* Services Section */
+.services {
+    padding: 40px 20px;
+}
+
+.service-card {
+    background-color: var(--fiery-orange);
+    color: var(--light-yellow);
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+.footer {
+    background-color: var(--bright-red);
+    color: var(--light-yellow);
+    text-align: center;
+    padding: 20px;
+    margin-top: auto; /* This makes sure the footer stays at the bottom */
+    width: 100%;
+}
+
+/* Button */
+.btn-custom {
+    background-color: var(--bright-yellow);
+    color: black;
+    border: none;
+}
+
+.btn-custom:hover {
+    background-color: black;
+    transition: 0.5s;
+}
