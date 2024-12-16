@@ -61,6 +61,11 @@ body {
     font-size: 1.2rem;
 }
 
+p {
+    color: #184e77;
+
+}
+
 /* Services Section */
 .services {
     padding: 40px 20px;

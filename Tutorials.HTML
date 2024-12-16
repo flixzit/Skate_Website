@@ -55,26 +55,6 @@
             padding: 40px 20px;
         }
 
-        .service-card {
-            background-color: var(--BLUE2);
-            color: var(--WHITE);
-            border-radius: 8px;
-            padding: 20px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-            transition: 0.4s;
-            text-align: center;
-        }
-
-        .service-card:hover {
-            background-color: var(--BLUEnew);
-            color: var(--WHITE);
-            border-radius: 8px;
-            padding: 35px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-            transition: 0.4s;
-        }
-
-
 
         .footer {
             background-color: var(--GREY3);
@@ -110,7 +90,20 @@
         font-size: 1rem;
         text-transform: uppercase;
         letter-spacing: 1px;
-    }
+        }
+        .flex-shrink-0{
+
+            width: 410px;
+            height: 290px;
+
+        }
+
+        .flex-shrink-1{
+            width: 390px;
+            height: 410px;
+
+}
+    
     </style>
 </head>
 <body>
@@ -125,27 +118,49 @@
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
                         <!-- Opts in nav bar -->
-                        <a class="nav-link" href="#services">Services</a>
+                        <a class="nav-link" href="Events.HTML">Events</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#tutorials">Tutorials</a>
+                        <a class="nav-link" href="Tutorials.HTML">Tutorials</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
+                        <a class="nav-link" href="Contact.HTML">Contact</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
+
+
+
+    <!-- Skateboard selecter -->
     <div class="hero">
-        <h1>Welcome to Palowski Skateworks</h1>
-        <p>Bring the skills and professional to your ride</p>
-        <button class="btn btn-custom mt-3"><b>Explore Now</b></button>
+        <h1>Skateboards</h1>
+        <p>We have a wide range of options of Skateboards</p>
     </div>
+    <div class="d-flex position-relative">
+        <img src="Images/KB1.jpg" class="flex-shrink-0 me-3" alt="...">
+        <div>
+          <h5 class="mt-0">Custom component with stretched link</h5>
+          <p>This is some placeholder content for the custom component. It is intended to mimic what some real-world content would look like, and we're using it here to give the component a bit of body and size.</p>
+          <a href="#" class="stretched-link">Go somewhere</a>
+        </div>
+      </div>
+      <BR>  
+
+      <div class="d-flex position-relative">
+        <img src="Images/KB2.jpg" class="flex-shrink-1 me-3" alt="...">
+        <div>
+          <h5 class="mt-0">Custom component with stretched link</h5>
+          <p>This is some placeholder content for the custom component. It is intended to mimic what some real-world content would look like, and we're using it here to give the component a bit of body and size.</p>
+          <a href="#" class="stretched-link">Go somewhere</a>
+        </div>
+      </div>
 
     <!-- Services Section (make into clickable) -->
+
+    
 
     <!-- The Footer (or another name ;) ) -->
     <footer class="footer" id="contact">
@@ -154,4 +169,4 @@
         <p>Phone: 020 1234 1234</p>
     </footer>
 </body>
-</html>
+</html>     
