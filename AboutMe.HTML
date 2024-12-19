@@ -9,8 +9,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <style>
         /* Color Palette */
-          /* Color Palette */
-          :root {
+        :root {
             --light-blue: #87ceeb;
             --soft-yellow: #fdfd96;
             --vibrant-orange: #ffa500;
@@ -50,23 +49,9 @@
             font-size: 1.2rem;
         }
 
-        .services {
-            padding: 40px 20px;
-        }
-
-        .service-card {
-            background-color: var(--bright-pink);
-            color: var(--white);
-            border-radius: 8px;
-            padding: 20px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-            transition: 0.4s;
+        .about-me {
+            padding: 40px;
             text-align: center;
-        }
-
-        .service-card:hover {
-            background-color: var(--vibrant-orange);
-            transform: scale(1.05);
         }
 
         .footer {
@@ -87,36 +72,19 @@
             transition: 0.5s;
         }
 
-        .btn-skateboard {
-            background-color: var(--light-blue);
-            color: var(--dark-grey);
-            border: none;
-            padding: 15px 30px;
-            font-size: 1rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        .btn-skateboard:hover {
-            background-color: var(--soft-yellow);
-            color: var(--dark-grey);
-        }
         .flex-shrink-0{
-
             width: 410px;
             height: 290px;
-
         }
 
         .flex-shrink-1{
             width: 390px;
             height: 410px;
-
-}
-    
+        }
     </style>
 </head>
 <body>
+
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
@@ -127,7 +95,6 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <!-- Opts in nav bar -->
                         <a class="nav-link" href="Events.HTML">Events</a>
                     </li>
                     <li class="nav-item">
@@ -140,34 +107,39 @@
             </div>
         </div>
     </nav>
-<!-- Hero Section -->
-<div class="hero">
-    <h1>Welcome to Palowski Skateworks!</h1>
-    <p>Learn about my journey, passion, and the world of skateboarding!</p>
-</div>
 
-<!-- About Me Section -->
-<div class="about-me">
-    <h2>About Me</h2>
-    <p>Hi, I'm Palowski, the founder of Palowski Skateworks. I've been passionate about skateboarding for over 12 years. Whether it's performing tricks, building custom boards, or just enjoying the ride, skateboarding has always been a way for me to express myself and connect with others.</p>
-    <p>My goal with Palowski Skateworks is to share my love for the sport and help others improve their skills, while also offering a community for skateboarders to connect and share their experiences.</p>
-    <img src="Images/Me.jpg" class="flex-shrink-1 me-3" alt="...">
-</div>
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>Welcome to Palowski Skateworks!</h1>
+        <p>Learn about my journey, passion, and the world of skateboarding!</p>
+    </div>
 
-<!-- Skills Section  (h2>My Skills and Interests</h2>
-    <ul>
-        <li>Custom skateboard design</li>
-        <li>Skateboard tricks and stunts</li>
-        <li>Skateboarding tutorials and tips</li>
-        <li>Event planning for skateboarding competitions</li>
-    </ul>
-</div> -->
+    <!-- About Me Section -->
+    <div class="about-me">
+        <h2>About Me</h2>
+        <p>Hi, I'm Palowski, the founder of Palowski Skateworks. I've been passionate about skateboarding for over 12 years. Whether it's performing tricks, building custom boards, or just enjoying the ride, skateboarding has always been a way for me to express myself and connect with others.</p>
+        <p>My goal with Palowski Skateworks is to share my love for the sport and help others improve their skills, while also offering a community for skateboarders to connect and share their experiences.</p>
+        <img src="Images/Me.jpg" class="flex-shrink-1 me-3" alt="...">
 
-<!-- The Footer -->
-<footer class="footer" id="contact">
-    <p>&copy; 2024 Palowski Skateworks. All rights reserved.</p>
-    <p>Email: <a href="mailto:info@palowskiskateworks.com" class="text-light-yellow">info@palowskiskateworks.com</a></p>
-    <p>Phone: 020 1234 1234</p>
-</footer>
+        <!-- YouTube Video Embed -->
+        <div class="my-5">
+            <h3>Check Out Our Latest Skateboarding Tutorial!</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/YOUR_VIDEO_ID_HERE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <!-- YouTube Link Option -->
+        <div class="my-3">
+            <h4>Or watch it on YouTube!</h4>
+            <a href="https://www.youtube.com/watch?v=YOUR_VIDEO_ID_HERE" class="btn btn-custom" target="_blank">Watch Now</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <p>&copy; 2024 Palowski Skateworks. All rights reserved.</p>
+        <p>Email: <a href="mailto:info@palowskiskateworks.com" class="text-light-yellow">info@palowskiskateworks.com</a></p>
+        <p>Phone: 020 1234 1234</p>
+    </footer>
+
 </body>
 </html>
