@@ -33,57 +33,11 @@
             color: var(--white) !important;
         }
 
-        .hero {
-            background: linear-gradient(135deg, var(--light-blue), var(--soft-yellow));
-            padding: 60px;
-            text-align: center;
-            color: var(--dark-grey);
-        }
-
-        .hero h1 {
-            font-size: 3rem;
-            font-weight: bold;
-        }
-
-        .hero p {
-            font-size: 1.2rem;
-        }
-
-        .services {
-            padding: 40px 20px;
-        }
-
-        .service-card {
-            background-color: var(--bright-pink);
-            color: var(--white);
-            border-radius: 8px;
-            padding: 20px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-            transition: 0.4s;
-            text-align: center;
-        }
-
-        .service-card:hover {
-            background-color: var(--vibrant-orange);
-            transform: scale(1.05);
-        }
-
         .footer {
             background-color: var(--dark-grey);
             color: var(--white);
             text-align: center;
             padding: 20px;
-        }
-
-        .btn-custom {
-            background-color: var(--bright-pink);
-            color: var(--white);
-            border: none;
-        }
-
-        .btn-custom:hover {
-            background-color: var(--vibrant-orange);
-            transition: 0.5s;
         }
 
         .btn-skateboard {
@@ -100,54 +54,36 @@
             background-color: var(--soft-yellow);
             color: var(--dark-grey);
         }
-        .flex-shrink-0{
-
-            width: 410px;
-            height: 290px;
-
-        }
-
-        .flex-shrink-1{
-            width: 390px;
-            height: 410px;
-
-}
-    
     </style>
 </head>
 <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-            <a class="navbar-brand" href="Index.HTML">Palowski Skateworks</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <a class="navbar-brand" href="index.html">Palowski Skateworks</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <!-- Opts in nav bar -->
-                        <a class="nav-link" href="Events.HTML">Events</a>
+                        <a class="nav-link" href="events.html">Events</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="Tutorials.HTML">Tutorials</a>
+                        <a class="nav-link" href="tutorials.html">Tutorials</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="Contact.HTML">Contact</a>
+                        <a class="nav-link" href="contact.html">Contact</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-
-
-
-
-    <!-- The Footer (or another name ;) ) -->
+    <!-- Footer -->
     <footer class="footer" id="contact">
         <p>&copy; 2024 Palowski Skateworks. All rights reserved.</p>
-        <p>Email: <a href="mailto:info@palowskiskateworks.com" style="color: #efe6dd;">info@palowskiskateworks.com</a></p>
+        <p>Email: <a href="mailto:info@palowskiskateworks.com" class="text-light">info@palowskiskateworks.com</a></p>
         <p>Phone: 020 1234 1234</p>
     </footer>
 </body>
