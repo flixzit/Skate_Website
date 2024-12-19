@@ -49,145 +49,71 @@
             font-size: 1.2rem;
         }
 
-        .services {
-            padding: 40px 20px;
-        }
-
-        .service-card {
-            background-color: var(--bright-pink);
-            color: var(--white);
-            border-radius: 8px;
-            padding: 20px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-            transition: 0.4s;
-            text-align: center;
-        }
-
-        .service-card:hover {
-            background-color: var(--vibrant-orange);
-            transform: scale(1.05);
-        }
-
         .footer {
             background-color: var(--dark-grey);
             color: var(--white);
             text-align: center;
             padding: 20px;
         }
-
-        .btn-custom {
-            background-color: var(--bright-pink);
-            color: var(--white);
-            border: none;
-        }
-
-        .btn-custom:hover {
-            background-color: var(--vibrant-orange);
-            transition: 0.5s;
-        }
-
-        .btn-skateboard {
-            background-color: var(--light-blue);
-            color: var(--dark-grey);
-            border: none;
-            padding: 15px 30px;
-            font-size: 1rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        .btn-skateboard:hover {
-            background-color: var(--soft-yellow);
-            color: var(--dark-grey);
-        }
-        .flex-shrink-0{
-
-            width: 410px;
-            height: 290px;
-
-        }
-
-        .flex-shrink-1{
-            width: 390px;
-            height: 410px;
-
-}
-    
     </style>
 </head>
 <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-            <a class="navbar-brand" href="Index.HTML">Palowski Skateworks</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <a class="navbar-brand" href="index.html">Palowski Skateworks</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <!-- Opts in nav bar -->
-                        <a class="nav-link" href="Events.HTML">Events</a>
+                        <a class="nav-link" href="events.html">Events</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="Tutorials.HTML">Tutorials</a>
+                        <a class="nav-link" href="tutorials.html">Tutorials</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="Contact.HTML">Contact</a>
+                        <a class="nav-link" href="contact.html">Contact</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-
-
-
-    <!-- Skateboard selecter -->
+    <!-- Hero Section -->
     <div class="hero">
-        <h1>Tutorials</h1>
-        <p>Here we have a large amount of contect to help you build your board, or learn new tricks.</p>
+        <h1>Welcome to Palowski Skateworks</h1>
+        <p>Your ultimate destination for everything skateboarding! Whether you’re looking to build a custom board or master your next trick, we’ve got you covered.</p>
     </div>
 
+    <hr class="border border-primary border-3 opacity-75">
 
-    <hr>
-
-<div class="text-success">
-  <hr>
-</div>
-
-<hr class="border border-primary border-3 opacity-75">
-
-
+    <!-- Tutorials Section -->
+    <div class="d-flex position-relative">
+        <img src="Images/KB1.jpg" class="flex-shrink-0 me-3" alt="Custom skateboard example">
+        <div>
+            <h5 class="mt-0">Build Your Perfect Skateboard</h5>
+            <p>Discover step-by-step guides to help you craft your own custom skateboard. From selecting the right parts to assembling them like a pro, we’ve got detailed tutorials just for you.</p>
+            <a href="#" class="stretched-link">Learn More</a>
+        </div>
+    </div>
+    <br>
 
     <div class="d-flex position-relative">
-        <img src="Images/KB1.jpg" class="flex-shrink-0 me-3" alt="...">
+        <img src="Images/KB2.jpg" class="flex-shrink-1 me-3" alt="Skateboarding tricks example">
         <div>
-          <h5 class="mt-0">Custom component with stretched link</h5>
-          <p>This is some placeholder content for the custom component. It is intended to mimic what some real-world content would look like, and we're using it here to give the component a bit of body and size.</p>
-          <a href="#" class="stretched-link">Go somewhere</a>
+            <h5 class="mt-0">Master Skateboarding Tricks</h5>
+            <p>Want to land that ollie or kickflip? Explore our easy-to-follow tutorials for tricks, whether you're a beginner or looking to level up your skills.</p>
+            <a href="#" class="stretched-link">Start Practicing</a>
         </div>
-      </div>
-      <BR>  
+    </div>
 
-      <div class="d-flex position-relative">
-        <img src="Images/KB2.jpg" class="flex-shrink-1 me-3" alt="...">
-        <div>
-          <h5 class="mt-0">Custom component with stretched link</h5>
-          <p>This is some placeholder content for the custom component. It is intended to mimic what some real-world content would look like, and we're using it here to give the component a bit of body and size.</p>
-          <a href="#" class="stretched-link">Go somewhere</a>
-        </div>
-      </div>
-
-    <!-- Services Section (make into clickable) -->
-
-    
-
-    <!-- The Footer (or another name ;) ) -->
+    <!-- Footer -->
     <footer class="footer" id="contact">
         <p>&copy; 2024 Palowski Skateworks. All rights reserved.</p>
-        <p>Email: <a href="mailto:info@palowskiskateworks.com" class="text-light-yellow">info@palowskiskateworks.com</a></p>
+        <p>Email: <a href="mailto:info@palowskiskateworks.com">info@palowskiskateworks.com</a></p>
         <p>Phone: 020 1234 1234</p>
     </footer>
 </body>
-</html>     
+</html>
