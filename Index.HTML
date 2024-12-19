@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Palowski Skateworks</title>
+    <title>Palowski Skateworks - Events</title>
     <link rel="icon" type="image/x-icon" href="Images/SIcon.ico">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,18 +11,19 @@
         /* Color Palette */
         :root {
             --light-blue: #87ceeb;
-            --soft-yellow: #fdfd96;
-            --vibrant-orange: #ffa500;
             --bright-pink: #ff69b4;
             --light-grey: #f5f5f5;
             --dark-grey: #2c2c2c;
+            --vibrant-orange: #ffa500;
             --white: #ffffff;
+            --button-color: #0066cc; /* Primary button color */
+            --button-hover: #004c99; /* Button hover color */
         }
 
         body {
             background-color: var(--light-grey);
             color: var(--dark-grey);
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
         }
 
         .navbar {
@@ -33,39 +34,33 @@
             color: var(--white) !important;
         }
 
+        .hero-section {
+            padding: 60px 20px;
+        }
+
         .hero {
-            background: linear-gradient(135deg, var(--light-blue), var(--soft-yellow));
-            padding: 60px;
-            text-align: center;
-            color: var(--dark-grey);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
         }
 
-        .hero h1 {
-            font-size: 3rem;
-            font-weight: bold;
-        }
-
-        .hero p {
-            font-size: 1.2rem;
-        }
-
-        .services {
-            padding: 40px 20px;
-        }
-
-        .service-card {
-            background-color: var(--bright-pink);
-            color: var(--white);
-            border-radius: 8px;
-            padding: 20px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-            transition: 0.4s;
-            text-align: center;
-        }
-
-        .service-card:hover {
-            background-color: var(--vibrant-orange);
+        .hero:hover {
             transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .hero h2 {
+            font-size: 1.75rem;
+        }
+
+        .btn-shared {
+            background-color: var(--button-color);
+            color: var(--white);
+            border: none;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .btn-shared:hover {
+            background-color: var(--button-hover);
+            color: var(--white);
         }
 
         .footer {
@@ -74,89 +69,63 @@
             text-align: center;
             padding: 20px;
         }
-
-        .btn-custom {
-            background-color: var(--bright-pink);
-            color: var(--white);
-            border: none;
-        }
-
-        .btn-custom:hover {
-            background-color: var(--vibrant-orange);
-            transition: 0.5s;
-        }
-
-        .btn-skateboard {
-            background-color: var(--light-blue);
-            color: var(--dark-grey);
-            border: none;
-            padding: 15px 30px;
-            font-size: 1rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        .btn-skateboard:hover {
-            background-color: var(--soft-yellow);
-            color: var(--dark-grey);
-        }
     </style>
 </head>
 <body>
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="Index.HTML">Palowski Skateworks</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="Events.HTML">Events</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="Tutorials.HTML">Tutorials</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="Contact.HTML">Contact</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
-
-<!-- Hero Section -->
-<div class="hero">
-    <h1>Welcome to Palowski Skateworks</h1>
-    <p>Bring the skills and professional to your ride</p>
-    <button class="btn btn-custom mt-3"><b>Explore Now</b></button>
-</div>
-
-<!-- Services Section -->
-<div class="container services" id="services">
-    <h2 class="text-center mb-4">Our Services</h2>
-    <div class="row">
-        <div class="col-md-4">
-            <div class="service-card">
-                <a class="btn btn-skateboard" href="Skateboards.HTML" type="button">Skateboards</a>
-                <p>Discover our premium and custom-designed boards for all skill levels.</p>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Palowski Skateworks</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="events.html">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tutorials.html">Tutorials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
             </div>
         </div>
-        <div class="col-md-4">
-            <div class="service-card">
-                <a class="btn btn-skateboard" href="AboutMe.HTML" type="button">About Me</a>
-                <p>Here I talk a bit about myself, do interviews with local and national skaters, and much more.</p>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section py-5">
+        <div class="container">
+            <div class="row justify-content-center text-center mb-5">
+                <!-- Hero 1 -->
+                <div class="col-md-6">
+                    <div class="hero p-4 rounded" style="background-color: var(--light-blue); color: var(--dark-grey);">
+                        <h2 class="mb-3">Skate with Passion</h2>
+                        <p>Join our vibrant skateboarding community and experience the thrill of skating together.</p>
+                        <a href="#" class="btn btn-shared">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center text-center">
+                <!-- Hero 2 -->
+                <div class="col-md-6">
+                    <div class="hero p-4 rounded" style="background-color: var(--bright-pink); color: var(--white);">
+                        <h2 class="mb-3">Build Your Board</h2>
+                        <p>Craft your unique skateboard with our expert-guided workshops.</p>
+                        <a href="#" class="btn btn-shared">Get Started</a>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-</div>
+    </section>
 
-<!-- Footer -->
-<footer class="footer" id="contact">
-    <p>&copy; 2024 Palowski Skateworks. All rights reserved.</p>
-    <p>Email: <a href="mailto:info@palowskiskateworks.com" class="text-light">info@palowskiskateworks.com</a></p>
-    <p>Phone: 020 1234 1234</p>
-</footer>
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Palowski Skateworks. All rights reserved.</p>
+        <p>Email: <a href="mailto:info@palowskiskateworks.com" class="text-light">info@palowskiskateworks.com</a></p>
+        <p>Phone: 020 1234 1234</p>
+    </footer>
 </body>
 </html>

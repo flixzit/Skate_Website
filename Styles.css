@@ -127,3 +127,10 @@ p {
     color: white;
     cursor: pointer;
 }
+
+.hero.bg-custom1 {
+    background-color: #ff69b4; /* Bright Pink */
+}
+.hero.bg-custom2 {
+    background-color: #87ceeb; /* Light Blue */
+}
