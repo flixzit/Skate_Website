@@ -55,6 +55,13 @@
             text-align: center;
             padding: 20px;
         }
+
+        /* Image Size Limit */
+        .img-limited {
+            max-width: 100%; /* Ensure image does not exceed container width */
+            max-height: 300px; /* Limit the height */
+            object-fit: contain; /* Maintain aspect ratio */
+        }
     </style>
 </head>
 <body>
@@ -91,7 +98,7 @@
 
     <!-- Tutorials Section -->
     <div class="d-flex position-relative">
-        <img src="Images/KB1.jpg" class="flex-shrink-0 me-3" alt="Custom skateboard example">
+        <img src="Images/T1.png" class="flex-shrink-0 me-3 img-limited" alt="Custom skateboard example">
         <div>
             <h5 class="mt-0">Build Your Perfect Skateboard</h5>
             <p>Discover step-by-step guides to help you craft your own custom skateboard. From selecting the right parts to assembling them like a pro, we’ve got detailed tutorials just for you.</p>
@@ -101,7 +108,7 @@
     <br>
 
     <div class="d-flex position-relative">
-        <img src="Images/KB2.jpg" class="flex-shrink-1 me-3" alt="Skateboarding tricks example">
+        <img src="Images/T2.PNG" class="flex-shrink-1 me-3 img-limited" alt="Skateboarding tricks example">
         <div>
             <h5 class="mt-0">Master Skateboarding Tricks</h5>
             <p>Want to land that ollie or kickflip? Explore our easy-to-follow tutorials for tricks, whether you're a beginner or looking to level up your skills.</p>
