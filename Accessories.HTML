@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Palowski Skateworks</title>
+    <title>Palowski Skateworks - Accessories</title>
     <link rel="icon" type="image/x-icon" href="Images/SIcon.ico">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,8 +9,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <style>
         /* Color Palette */
-                /* Color Palette */
-                :root {
+        :root {
             --light-blue: #87ceeb;
             --soft-yellow: #fdfd96;
             --vibrant-orange: #ffa500;
@@ -87,7 +86,7 @@
             transition: 0.5s;
         }
 
-        .btn-skateboard {
+        .btn-accessory {
             background-color: var(--light-blue);
             color: var(--dark-grey);
             border: none;
@@ -97,9 +96,25 @@
             letter-spacing: 1px;
         }
 
-        .btn-skateboard:hover {
+        .btn-accessory:hover {
             background-color: var(--soft-yellow);
             color: var(--dark-grey);
+        }
+
+        .accessory-card {
+            background-color: var(--bright-pink);
+            color: var(--white);
+            border-radius: 8px;
+            padding: 20px;
+            margin: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            transition: 0.4s;
+            text-align: center;
+        }
+
+        .accessory-card:hover {
+            background-color: var(--vibrant-orange);
+            transform: scale(1.05);
         }
     </style>
 </head>
@@ -107,21 +122,23 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-            <a class="navbar-brand" href="Index.HTML">Palowski Skateworks</a>
+            <a class="navbar-brand" href="index.html">Palowski Skateworks</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <!-- Opts in nav bar -->
-                        <a class="nav-link" href="#services">Services</a>
+                        <a class="nav-link" href="events.html">Events</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#tutorials">Tutorials</a>
+                        <a class="nav-link" href="tutorials.html">Tutorials</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
+                        <a class="nav-link" href="accessories.html">Accessories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -130,14 +147,39 @@
 
     <!-- Hero Section -->
     <div class="hero">
-        <h1>Welcome to Palowski Skateworks</h1>
-        <p>Bring the skills and professional to your ride</p>
-        <button class="btn btn-custom mt-3"><b>Explore Now</b></button>
+        <h1>Skateboard Accessories</h1>
+        <p>Enhance your ride with the best skateboard accessories available!</p>
     </div>
 
-    <!-- Services Section (make into clickable) -->
+    <!-- Accessories Section -->
+    <div class="services">
+        <h2 class="text-center mb-5">Our Accessories</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="accessory-card">
+                    <h4>Decks</h4>
+                    <p>Find the perfect deck for your style.</p>
+                    <a href="#" class="btn btn-accessory">Shop Decks</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="accessory-card">
+                    <h4>Wheels</h4>
+                    <p>Choose wheels that fit your needs.</p>
+                    <a href="#" class="btn btn-accessory">Shop Wheels</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="accessory-card">
+                    <h4>Trucks</h4>
+                    <p>Get the best trucks for a smooth ride.</p>
+                    <a href="#" class="btn btn-accessory">Shop Trucks</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <!-- The Footer (or another name ;) ) -->
+    <!-- Footer -->
     <footer class="footer" id="contact">
         <p>&copy; 2024 Palowski Skateworks. All rights reserved.</p>
         <p>Email: <a href="mailto:info@palowskiskateworks.com" class="text-light-yellow">info@palowskiskateworks.com</a></p>

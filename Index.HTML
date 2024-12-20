@@ -11,10 +11,11 @@
         /* Color Palette */
         :root {
             --light-blue: #87ceeb;
+            --soft-yellow: #fdfd96;
+            --vibrant-orange: #ffa500;
             --bright-pink: #ff69b4;
             --light-grey: #f5f5f5;
             --dark-grey: #2c2c2c;
-            --vibrant-orange: #ffa500;
             --white: #ffffff;
             --button-color: #0066cc; /* Primary button color */
             --button-hover: #004c99; /* Button hover color */
@@ -35,20 +36,20 @@
         }
 
         .hero-section {
-            padding: 60px 20px;
-        }
-
-        .hero {
-            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-        }
-
-        .hero:hover {
-            transform: scale(1.05);
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            background: linear-gradient(135deg, var(--light-blue), var(--soft-yellow));
+            padding: 60px;
+            text-align: center;
+            color: var(--dark-grey);
         }
 
         .hero h2 {
-            font-size: 1.75rem;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--dark-grey);
         }
 
         .btn-shared {
@@ -101,20 +102,20 @@
             <div class="row justify-content-center text-center mb-5">
                 <!-- Hero 1 -->
                 <div class="col-md-6">
-                    <div class="hero p-4 rounded" style="background-color: var(--light-blue); color: var(--dark-grey);">
-                        <h2 class="mb-3">Skate with Passion</h2>
-                        <p>Join our vibrant skateboarding community and experience the thrill of skating together.</p>
-                        <a href="#" class="btn btn-shared">Learn More</a>
+                    <div class="hero p-4 rounded">
+                        <h2 class="mb-3">Skate with Style</h2>
+                        <p>Look for gear morch or other accessories you can add to you're own personal style</p>
+                        <a href="Accessories.HTML" class="btn btn-shared">Accessories</a>
                     </div>
                 </div>
             </div>
             <div class="row justify-content-center text-center">
                 <!-- Hero 2 -->
                 <div class="col-md-6">
-                    <div class="hero p-4 rounded" style="background-color: var(--bright-pink); color: var(--white);">
+                    <div class="hero p-4 rounded">
                         <h2 class="mb-3">Build Your Board</h2>
                         <p>Craft your unique skateboard with our expert-guided workshops.</p>
-                        <a href="#" class="btn btn-shared">Get Started</a>
+                        <a href="Skateboards.HTML" class="btn btn-shared">Skateboards</a>
                     </div>
                 </div>
             </div>
